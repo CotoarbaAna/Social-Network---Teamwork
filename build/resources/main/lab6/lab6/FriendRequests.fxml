@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab6.lab6.FriendReqController">
+   <children>
+      <Text layoutX="30.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friend Requests Received" textAlignment="CENTER" wrappingWidth="326.59324645996094">
+         <font>
+            <Font name="Dubai Regular" size="26.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6553030158534194" endY="0.7159090773625807" startX="0.2386363573146589" startY="0.14393936504017224">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" blue="0.7372549176216125" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="1.0" blue="0.5411764979362488" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button fx:id="Back_fr" layoutX="354.0" layoutY="345.0" mnemonicParsing="false" onAction="#onBackButtonClicked" prefHeight="26.0" prefWidth="51.0" text="Back" />
+      <TableView fx:id="TableView" layoutX="12.0" layoutY="58.0" prefHeight="200.0" prefWidth="358.0">
+        <columns>
+          <TableColumn fx:id="ColumnUsername" prefWidth="129.60003280639648" text="Username" />
+            <TableColumn fx:id="ColumnStatus" prefWidth="116.80000305175781" text="Status" />
+            <TableColumn fx:id="ColumnDate" prefWidth="110.4000244140625" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="Accept" layoutX="210.0" layoutY="305.0" mnemonicParsing="false" onAction="#onAcceptButtonClicked" text="Accept" />
+      <Button fx:id="Reject" layoutX="288.0" layoutY="305.0" mnemonicParsing="false" onAction="#onRejectButtonClicked" prefHeight="26.0" prefWidth="53.0" text="Reject" />
+      <TextField fx:id="EnterUser" layoutX="30.0" layoutY="305.0" onAction="#enterUser" />
+      <Text layoutX="18.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept/Reject Pending Requests">
+         <font>
+            <Font name="Dubai Regular" size="26.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6553030158534194" endY="0.7159090773625807" startX="0.2386363573146589" startY="0.14393936504017224">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" blue="0.7372549176216125" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="1.0" blue="0.5411764979362488" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TableView fx:id="TableViewSent" layoutX="394.0" layoutY="58.0" prefHeight="200.0" prefWidth="358.0">
+         <columns>
+            <TableColumn fx:id="ColumnUsernameSent" prefWidth="129.60003280639648" text="Username" />
+            <TableColumn fx:id="ColumnStatusSent" prefWidth="116.80000305175781" text="Status" />
+            <TableColumn fx:id="ColumnDateSent" prefWidth="110.4000244140625" text="Date" />
+         </columns>
+      </TableView>
+      <Text layoutX="410.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friend Requests Sent" textAlignment="CENTER" wrappingWidth="326.59324645996094">
+         <font>
+            <Font name="Dubai Regular" size="26.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6553030158534194" endY="0.7159090773625807" startX="0.2386363573146589" startY="0.14393936504017224">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" blue="0.7372549176216125" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="1.0" blue="0.5411764979362488" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="459.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Sent Requests">
+         <font>
+            <Font name="Dubai Regular" size="26.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6553030158534194" endY="0.7159090773625807" startX="0.2386363573146589" startY="0.14393936504017224">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" blue="0.7372549176216125" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="1.0" blue="0.5411764979362488" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="EnterUserSent" layoutX="459.0" layoutY="305.0" onAction="#enterUserSent" />
+      <Button fx:id="Cancel" layoutX="635.0" layoutY="305.0" mnemonicParsing="false" onAction="#onCancelButtonClicked" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab6.lab6.HelloController">
+   <children>
+      <TextField fx:id="typeUser" layoutX="93.0" layoutY="90.0" onAction="#enterUser" prefHeight="26.0" prefWidth="162.0" />
+      <Text fontSmoothingType="LCD" layoutX="86.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="98.43199157714844">
+         <font>
+            <Font name="Dubai Regular" size="33.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6704545165553237" endY="0.7159090773625807" startX="0.30681816691702063" startY="0.329545411196622">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" blue="0.8313725590705872" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.11764705926179886" green="0.7176470756530762" blue="0.43529412150382996" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="Back" layoutX="105.0" layoutY="224.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="60.0" text="Back" />
+      <Button fx:id="Connect" layoutX="195.0" layoutY="127.0" mnemonicParsing="false" onAction="#onConnectButtonClick" text="Connect" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ScenePane" prefHeight="235.0" prefWidth="235.0" styleClass="bodybg" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab6.lab6.HelloController">
+   <children>
+      <Button fx:id="Login" layoutX="94.0" layoutY="83.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
+      <Button fx:id="ExitButton" layoutX="94.0" layoutY="132.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="26.0" prefWidth="46.0" text="Exit" />
+      <Text layoutX="35.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social Network" textAlignment="CENTER" wrappingWidth="164.112548828125">
+         <font>
+            <Font name="Dubai Bold" size="19.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3749999923236442" startY="0.2272727272727273">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11664717644453049" green="0.7157894968986511" blue="0.436189740896225" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.456043956043956">
+                     <color>
+                        <Color red="1.0" blue="0.7372549176216125" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="1.0" blue="0.5411764979362488" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>

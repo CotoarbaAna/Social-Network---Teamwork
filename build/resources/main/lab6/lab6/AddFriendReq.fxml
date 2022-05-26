@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="lab6.lab6.AddFriendReqController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+
+        <Text layoutX="245.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Friend" wrappingWidth="113.53396606445312">
+            <font>
+                <Font name="Dubai Regular" size="23.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="0.6477273016264944" endY="1.0" startX="0.2651515106360118" startY="0.4583333477829442">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color green="1.0" blue="0.5411764979362488" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.16436251920122893">
+                            <color>
+                                <Color red="0.3174268901348114" green="0.621052622795105" blue="0.4793606102466583" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" blue="0.7372549176216125" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+
+        <TextField fx:id="sendToField" layoutX="225.0" layoutY="80.0" onAction="#enterUser" />
+        <Text fontSmoothingType="LCD" layoutX="150.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+
+        <Button fx:id="Back" layoutX="225.0" layoutY="160.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="60.0" text="Back" />
+        <Button fx:id="Add" layoutX="225.0" layoutY="120.0" mnemonicParsing="false" onAction="#onAddClicked" text="Add" />
+
+    </children>
+</AnchorPane>
